@@ -11,7 +11,7 @@ const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
 exports.placeOrder = async (req, res) => {
     console.log("Inside placeOrder");
 
-    const frontend_url = "http://localhost:5173";
+    const frontend_url = "https://food-delivery-app-chom.vercel.app/";
 
     try {
         console.log('userId from JWT:', req.payload);
